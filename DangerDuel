@@ -1,0 +1,57 @@
+            List<string> Player1Deck = new List<string>();
+            List<string> Player1Hand = new List<string>();
+            List<string> Player1Board = new List<string>();
+            List<string> Player2Deck = new List<string>();
+            List<string> Player2Hand = new List<string>();
+            List<string> Player2Board = new List<string>();
+
+
+            string selection;
+            string selection2;
+            for (; ; )
+            {
+                Console.WriteLine("DANGER DUEL");
+                Console.WriteLine("");
+                Console.WriteLine("Enter 'A' to Start");
+                Console.WriteLine("Enter 'B' to Quit");
+                Console.Write("Choice: ");
+                selection = Console.ReadLine();
+
+                if (selection == "A")
+                {
+                    Console.Clear(); 
+                    //enter gane here
+                }
+                else if (selection == "B")
+                {
+                    Console.Clear();
+                    Console.Write("Are you sure? (Y/N): ");
+                    selection2 = Console.ReadLine();
+                    if (selection2 == "Y")
+                    {
+                        Console.Write("Are you really sure? (Y/N): ");
+                        selection2 = Console.ReadLine();
+                        if (selection2 == "Y")
+                        {
+                            Console.WriteLine("Bye :(");
+                            Console.Read();
+                            break;
+                        }
+                        else if (selection2 == "N")
+                        {
+
+                            Console.Clear();
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Enter valid input!");
+                        Console.Clear();
+                    }
+                }
+                else
+                {
+                    Console.Clear();
+                }
+                         
+            }
